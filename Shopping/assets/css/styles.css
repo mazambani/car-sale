@@ -1,0 +1,94 @@
+@font-face {
+  font-family: Inter-var;
+  src: url(../fonts/Inter.var.woff2) format("woff2");
+}
+
+:root {
+  --color-primary: #c1d62e;
+  --color-hover: #b1c522;
+  --color-secondary: #00d9ff;
+  --color-accent: #ff3400;
+  --color-border: #ccc;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: Inter-var;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.navbar {
+  border-bottom: 3px solid #e7e7e7;
+}
+.navbar-light .navbar-brand {
+  color: var(--color-primary);
+}
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+  color: var(--color-hover);
+}
+.nav_link {
+  color: var(--color-primary);
+}
+.car-brand {
+  width: 25px;
+  margin: 0 10px 0 5px;
+}
+span.navbar-toggler-icon {
+  color: var(--color-primary);
+  box-shadow: none;
+}
+
+@media screen and (min-width: 567px) {
+  .nav-item.dropdown {
+    margin-right: 50px;
+  }
+  .nav_link {
+    margin-left: 100px;
+  }
+}
+
+.list-group-item {
+  padding-left: 20px;
+  border-bottom: 2px solid var(--color-border);
+}
+.summary {
+  padding: 2rem 1.5rem;
+  border: 2px solid var(--color-border);
+}
+
+.summary li {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+/* ======= Footer ======== */
+.footer {
+  background: #32383e;
+  padding: 0.5rem 0.5rem;
+  color: #fff;
+  font-size: 16px;
+}
+
+.footer .copyright {
+  line-height: 1.6;
+  color: #a1aab4;
+  font-size: 16px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
